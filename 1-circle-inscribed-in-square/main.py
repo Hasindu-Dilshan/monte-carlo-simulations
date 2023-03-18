@@ -12,9 +12,10 @@ for i in range(num_simulations):
     x = random.random()
     y = random.random()
 
-    position = x ** 2 + y ** 2
+    # For every (x,y) such that 0 <= sqrt(x^2 + y^2) <= 1 ==> 0 <= x^2 + y^2 <= 1
+    position_square = x ** 2 + y ** 2
 
-    if position <= 1:
+    if position_square <= 1:
         inside_circle += 1
 
 ratio_darts = inside_circle / num_simulations
