@@ -2,7 +2,7 @@
 #include <vector>
 
 
-void show_2d_matrix(std::vector<std::vector<int>> matrix) {
+void show_2d_matrix(std::vector<std::vector<int>>& matrix) {
 	for(int i = 0; i < matrix.size(); i++) {
 		for(int j = 0; j < matrix[i].size(); j++) {
 			std::cout << matrix[i][j] << " ";
