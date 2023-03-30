@@ -12,7 +12,7 @@ for i in range(num_simulations):
     x = random.random()
     y = random.random()
 
-    # For every float (x,y) such that 0 <= sqrt(x^2 + y^2) <= sqrt(2) ==> 0 <= x^2 + y^2 <= 2
+    # For every float x & y , 0 <= sqrt(x^2 + y^2) <= sqrt(2) ==> 0 <= x^2 + y^2 <= 2
     position_square = x ** 2 + y ** 2
 
     if position_square <= 1:
