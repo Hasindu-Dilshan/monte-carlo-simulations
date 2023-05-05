@@ -19,7 +19,7 @@ for i in range(num_simulations):
         inside_circle += 1
 
 ratio_darts = inside_circle / num_simulations
-ratio_areas = (math.pi * 1 * 1) / (radius * 4)
+ratio_areas = (math.pi * radius * radius) / (radius * 4)
 
 # print(inside_circle)
 
